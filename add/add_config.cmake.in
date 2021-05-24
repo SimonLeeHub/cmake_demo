@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+set(add_LIBS "@add_LIBS@")
+
+include("${CMAKE_CURRENT_LIST_DIR}/add_target_debug.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/add_target_release.cmake")
+
+

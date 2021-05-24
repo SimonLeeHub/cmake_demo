@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(add PATHS /home/simon/Documents/cmake_text/add/build/des/lib/cmake)
+
+set(multify_LIBS "@multify_LIBS@")
+
+include("${CMAKE_CURRENT_LIST_DIR}/multify_target_debug.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/multify_target_release.cmake")
